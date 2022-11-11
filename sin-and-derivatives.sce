@@ -1,0 +1,15 @@
+clc; clear all; clf;
+t = -10:.01:10;
+y1 = sinh(t);
+plot(t,y1,'b.');
+xlabel('Time');ylabel('Amplitude');
+title('Plotting sine-h and its derivatives');
+dy1 = diff(y1)./diff(t);
+t = -9.99:.01:10;
+plot(t,dy1,'r.');
+xlabel('Time');ylabel('Amplitude');
+dy2 = diff(dy1)./diff(t);
+t = -9.98:.01:10;
+plot(t,dy2,'g.');
+xlabel('Time');ylabel('Amplitude');
+legend('Sin-h','dy1','dy2');

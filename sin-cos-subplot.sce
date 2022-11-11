@@ -1,0 +1,12 @@
+f=input("Enter the frequency: ");
+a=input("Enter the amplitude: ");
+t=0:0.001:2;
+y=a*sin(2*%pi*f*t);
+y1=a*cos(2*%pi*f*t);
+y2=t;
+subplot(3,1,1);
+plot(t,y);
+subplot(3,1,2);
+plot(t,y1);
+subplot(3,1,3);
+plot(t,y2);
